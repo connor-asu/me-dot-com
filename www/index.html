@@ -5,16 +5,27 @@
     <title>Connor Eggleston</title>
     <!--include css link files-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="css/main.less" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
 </head>
 <body ng-cloak>
 
     <!-- TODO: Build the left navigation panel here. -->
-
+    <div id="navigation-side">
+        <div id="profile-picture">
+            <img src="./img/profile-picture.jpg">
+        </div>
+        <p>Connor Eggleston</p>
+        <ul>
+            <li>About</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </div>
 
 
     <!--ui-view is provided by the router to tell it to swap out the templates here-->
-    <div ui-view></div>
+    <div id="container" ui-view></div>
 
     <!--include all of the external frameworks-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
