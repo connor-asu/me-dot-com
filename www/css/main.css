@@ -7,9 +7,10 @@ html {
   height: 100%;
   width: 450px;
   background-color: #397eab;
-  position: absolute;
+  position: fixed;
   padding-top: 30px;
   border-right: 2px solid #083450;
+  overflow-y: auto;
 }
 #navigation-side img {
   border-radius: 50%;
@@ -28,7 +29,7 @@ html {
   margin-top: 50px;
 }
 #navigation-side ul li {
-  font-size: 32px;
+  font-size: 28px;
   padding: 10px;
   border-bottom: 2px solid #083450;
 }
@@ -37,7 +38,6 @@ html {
 }
 #navigation-side ul li:hover {
   cursor: pointer;
-  background-color: #083450;
   color: #ffffff;
 }
 #navigation-side ul li.active-page {

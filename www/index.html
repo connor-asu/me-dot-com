@@ -7,21 +7,12 @@
     <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <link href="css/home.css" type="text/css" rel="stylesheet">
+    <link href="components/perfect-scrollbar/css/perfect-scrollbar.min.css">
 </head>
 <body ng-cloak>
 
-    <div ng-controller="HomeCtrl" id="navigation-side" class="text-center">
-        <img navigation-side ui-sref="home" src="./img/profile-picture.png">
-        <h1>Connor Eggleston</h1>
-        <span>"Insert some cool, meaningful quote here..."</span>
-        <ul class="list-unstyled">
-            <li navigation-side ui-sref="about" id="about">About</li>
-            <li navigation-side ui-sref="experience" id="experience">Experience</li>
-            <li navigation-side ui-sref="projects" id="projects">Projects</li>
-            <li navigation-side ui-sref="contact" id="contact">Contact</li>
-        </ul>
-    </div>
-
+    <!--the default navigation sidebar to be included on every view-->
+    <div ng-include="'app.html'"></div>
     <!--swap out the templates here-->
     <div id="template-view" ui-view></div>
 
@@ -40,6 +31,7 @@
     <script src="js/controllers/projects-controller.js"></script>
     <script src="js/controllers/contact-controller.js"></script>
     <script src="js/directives/navigation-side-directive.js"></script>
+    <script src="components/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
     <script src="js/configs/app.routes.js"></script>
     <script src="js/app.init.js"></script>
 
