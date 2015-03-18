@@ -11,19 +11,24 @@
             $urlRouterProvider.otherwise("/");
 
             $stateProvider
-                .state("about", {
+                .state("home", {
                     url: "/",
+                    controller: "HomeCtrl",
+                    templateUrl: "partials/home.html"
+                })
+                .state("about", {
+                    url: "/about",
                     controller: "AboutCtrl",
                     templateUrl: "partials/about.html"
                 })
                 .state("experience", {
                     url: "/experience",
-                    controller: "ExpCtrl",
+                    controller: "ExperienceCtrl",
                     templateUrl: "partials/experience.html"
                 })
                 .state("projects", {
                     url: "/projects",
-                    controller: "ProjCtrl",
+                    controller: "ProjectCtrl",
                     templateUrl: "partials/projects.html"
                 })
                 .state("contact", {

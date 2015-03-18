@@ -1,0 +1,48 @@
+html {
+  min-height: 100%;
+  position: absolute;
+}
+#navigation-side {
+  height: 100%;
+  width: 450px;
+  background-color: #397eab;
+  position: absolute;
+  padding-top: 30px;
+  border-right: 2px solid #083450;
+}
+#navigation-side img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 2px 3px 5px #000;
+  -moz-box-shadow: 2px 3px 5px #000;
+}
+#navigation-side img:hover {
+  cursor: pointer;
+}
+#navigation-side h1 {
+  font-size: 44px;
+  color: #062539;
+}
+#navigation-side ul {
+  margin-top: 50px;
+}
+#navigation-side ul li {
+  font-size: 32px;
+  padding: 10px;
+  border-bottom: 2px solid #083450;
+}
+#navigation-side ul li:first-child {
+  border-top: 2px solid #083450;
+}
+#navigation-side ul li:hover {
+  cursor: pointer;
+  background-color: #083450;
+  color: #ffffff;
+}
+#navigation-side ul li.active-page {
+  background-color: #083450;
+  color: #ffffff;
+}
+#container {
+  margin-left: 450px;
+}

@@ -6,9 +6,8 @@
 	'use strict';
 
 	angular.module("MeDotCom", [
-		"MeDotCom.Constants",
-		"MeDotCom.Services",
 		"MeDotCom.Controllers",
+		"MeDotCom.Directives",
 		"MeDotCom.Configs"
 	]);
 

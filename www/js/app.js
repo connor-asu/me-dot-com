@@ -5,9 +5,8 @@
 (function($, angular) {
 	'use strict';
 
-	angular.module("MeDotCom.Constants", []);
-	angular.module("MeDotCom.Services", []);
 	angular.module("MeDotCom.Controllers", []);
+    angular.module("MeDotCom.Directives", []);
 	angular.module("MeDotCom.Configs", ["ui.router"]);
 
 }(jQuery, angular));
