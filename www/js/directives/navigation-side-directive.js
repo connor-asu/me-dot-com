@@ -13,7 +13,7 @@
                     var activePage = scope.currentRoute;
                     switch(activePage) {
                         case "/":
-                            element.parent().find('li').removeClass('active-page');
+                            element.parent().find('a').removeClass('active-page');
                             break;
                         case "/about":
                             if (attrs.id === "about") {
@@ -42,7 +42,7 @@
                     element.on('click', function() {
 
                         //remove the active page class from all navigation items
-                        element.parent().find('li').removeClass('active-page');
+                        element.parent().parent().find('a').removeClass('active-page');
                         //add the class on to only the nav item that was clicked
                         element.addClass('active-page');
                     });

@@ -3,49 +3,55 @@ html {
   min-width: 100%;
   position: absolute;
 }
-#navigation-side {
+html body #navigation-side {
   height: 100%;
-  width: 450px;
-  background-color: #397eab;
+  width: 425px;
   position: fixed;
   padding-top: 30px;
-  border-right: 2px solid #083450;
-  overflow-y: auto;
+  border-right: 2px solid #062539;
+  background: -webkit-linear-gradient(left top, #2f678c, #397eab);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2f678c, #397eab);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2f678c, #397eab);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2f678c, #397eab);
+  /* Standard syntax */
 }
-#navigation-side img {
+html body #navigation-side img {
   border-radius: 50%;
   border: 2px solid #fff;
   -webkit-box-shadow: 2px 3px 5px #000;
   -moz-box-shadow: 2px 3px 5px #000;
 }
-#navigation-side img:hover {
+html body #navigation-side img:hover {
   cursor: pointer;
 }
-#navigation-side h1 {
+html body #navigation-side h1 {
+  margin-top: 25px;
   font-size: 44px;
   color: #062539;
 }
-#navigation-side ul {
+html body #navigation-side ul {
   margin-top: 50px;
 }
-#navigation-side ul li {
-  font-size: 28px;
-  padding: 10px;
-  border-bottom: 2px solid #083450;
+html body #navigation-side ul li {
+  font-size: 30px;
+  padding: 15px;
 }
-#navigation-side ul li:first-child {
-  border-top: 2px solid #083450;
+html body #navigation-side ul li a {
+  color: #062539;
+  text-decoration: none;
 }
-#navigation-side ul li:hover {
+html body #navigation-side ul li a:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #fafafa;
 }
-#navigation-side ul li.active-page {
-  background-color: #083450;
-  color: #ffffff;
+html body #navigation-side ul li a.active-page {
+  color: #fafafa;
 }
-#template-view {
-  margin-left: 450px;
+html body #template-view {
+  margin-left: 425px;
   height: 100%;
   position: absolute;
 }

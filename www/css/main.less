@@ -1,74 +1,81 @@
 //dimensions
-@navigation-side-width: 450px;
+@navigation-side-width: 425px;
 
 //font sizes
-@navigation-side-list-font-size: 28px;
+@navigation-side-list-font-size: 30px;
 @navigation-side-name-font-size: 44px;
 
 //colors
 @navigation-side-background-color: #397EAB;
-@navigation-side-list-item-color: darken(#0D527E, 10%);
-@navigation-side-list-item-active-color: #fff;
+@navigation-side-font-color: darken(#0D527E, 15%);
+@navigation-side-list-item-active-color: darken(#fff, 2%);
 
 html {
   min-height: 100%;
   min-width: 100%;
   position: absolute;
-}
 
-#navigation-side {
-  height: 100%;
-  width: @navigation-side-width;
-  background-color: @navigation-side-background-color;
-  position: fixed; //TODO: fixed or absolute?
-  padding-top: 30px;
-  border-right: 2px solid @navigation-side-list-item-color;
-  overflow-y: auto;
+  body {
 
-  img {
-    border-radius: 50%;
-    border: 2px solid #fff;
-    -webkit-box-shadow: 2px 3px 5px #000;
-    -moz-box-shadow: 2px 3px 5px #000;
+    //background-color: @navigation-side-list-item-color;
 
-    &:hover {
-      cursor: pointer;
+    #navigation-side {
+      height: 100%;
+      width: @navigation-side-width;
+      position: fixed; //TODO: fixed or absolute?
+      padding-top: 30px;
+      border-right: 2px solid @navigation-side-font-color;
+      background: -webkit-linear-gradient(left top, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* Standard syntax */
+
+      img {
+        border-radius: 50%;
+        border: 2px solid #fff;
+        -webkit-box-shadow: 2px 3px 5px #000;
+        -moz-box-shadow: 2px 3px 5px #000;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      h1 {
+        margin-top: 25px;
+        font-size: @navigation-side-name-font-size;
+        color: @navigation-side-font-color;
+      }
+
+      ul {
+        margin-top: 50px;
+
+        li {
+          font-size: @navigation-side-list-font-size;
+          padding: 15px;
+
+          a {
+            color: @navigation-side-font-color;
+            text-decoration: none;
+
+            &:hover {
+
+              cursor: pointer;
+              color: @navigation-side-list-item-active-color;
+            }
+
+            &.active-page {
+              color: @navigation-side-list-item-active-color;
+            }
+          }
+        }
+      }
+    }
+
+    #template-view {
+      margin-left: @navigation-side-width;
+      height: 100%;
+      position: absolute;
     }
   }
-
-  h1 {
-    font-size: @navigation-side-name-font-size;
-    color: darken(@navigation-side-list-item-color, 5%);
-  }
-
-  ul {
-    margin-top: 50px;
-
-    li {
-      font-size: @navigation-side-list-font-size;
-      padding: 10px;
-      border-bottom: 2px solid @navigation-side-list-item-color;
-
-      &:first-child {
-        border-top: 2px solid @navigation-side-list-item-color;
-      }
-
-      &:hover {
-        cursor: pointer;
-//        background-color: @navigation-side-list-item-color;
-        color: @navigation-side-list-item-active-color;
-      }
-
-      &.active-page {
-        background-color: @navigation-side-list-item-color;
-        color: @navigation-side-list-item-active-color;
-      }
-    }
-  }
-}
-
-#template-view {
-  margin-left: @navigation-side-width;
-  height: 100%;
-  position: absolute;
 }
