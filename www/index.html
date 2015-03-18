@@ -6,10 +6,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" type="text/css" rel="stylesheet">
     <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/home.css" type="text/css" rel="stylesheet">
 </head>
 <body ng-cloak>
 
-    <div ng-controller="HomeCtrl" id="navigation-side" class="row text-center">
+    <div ng-controller="HomeCtrl" id="navigation-side" class="text-center">
         <img navigation-side ui-sref="home" src="./img/profile-picture.png">
         <h1>Connor Eggleston</h1>
         <span>"Insert some cool, meaningful quote here..."</span>
@@ -22,7 +23,7 @@
     </div>
 
     <!--swap out the templates here-->
-    <div id="container" ui-view></div>
+    <div id="template-view" ui-view></div>
 
     <!--include all of the external frameworks-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.4.0/less.min.js"></script>
