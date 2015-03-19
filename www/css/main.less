@@ -15,9 +15,14 @@ html {
   min-width: 100%;
   position: absolute;
 
-  body {
+  body.main {
 
-    //background-color: @navigation-side-list-item-color;
+    width: 100%;
+    background: url('../img/sf-skyline.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 
     #navigation-side {
       overflow: hidden;
@@ -30,12 +35,14 @@ html {
       background: -o-linear-gradient(bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Opera 11.1 to 12.0 */
       background: -moz-linear-gradient(bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Firefox 3.6 to 15 */
       background: linear-gradient(to bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* Standard syntax */
+      -webkit-box-shadow: 2px 3px 5px #000;
+      -moz-box-shadow: 2px 3px 5px #000;
 
       img {
         border-radius: 50%;
         border: 2px solid #fff;
-        -webkit-box-shadow: 2px 3px 5px #000;
-        -moz-box-shadow: 2px 3px 5px #000;
+        -webkit-box-shadow: 1px 4px #000;
+        -moz-box-shadow: 1px 4px #000;
 
         &:hover {
           cursor: pointer;
@@ -75,9 +82,8 @@ html {
 
     #template-view {
       margin-left: @navigation-side-width;
-      height: 100%;
-      position: absolute;
-      overflow: auto;
+      max-width: 100%;
+      min-height: 100%;
     }
   }
 }

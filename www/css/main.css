@@ -3,7 +3,15 @@ html {
   min-width: 100%;
   position: absolute;
 }
-html body #navigation-side {
+html body.main {
+  width: 100%;
+  background: url('../img/sf-skyline.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+html body.main #navigation-side {
   overflow: hidden;
   min-height: 100%;
   width: 425px;
@@ -18,42 +26,43 @@ html body #navigation-side {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom right, #2f678c, #397eab);
   /* Standard syntax */
-}
-html body #navigation-side img {
-  border-radius: 50%;
-  border: 2px solid #fff;
   -webkit-box-shadow: 2px 3px 5px #000;
   -moz-box-shadow: 2px 3px 5px #000;
 }
-html body #navigation-side img:hover {
+html body.main #navigation-side img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 1px 4px #000;
+  -moz-box-shadow: 1px 4px #000;
+}
+html body.main #navigation-side img:hover {
   cursor: pointer;
 }
-html body #navigation-side h1 {
+html body.main #navigation-side h1 {
   margin-top: 25px;
   font-size: 44px;
   color: #062539;
 }
-html body #navigation-side ul {
+html body.main #navigation-side ul {
   margin-top: 50px;
 }
-html body #navigation-side ul li {
+html body.main #navigation-side ul li {
   font-size: 30px;
   padding: 15px;
 }
-html body #navigation-side ul li a {
+html body.main #navigation-side ul li a {
   color: #062539;
   text-decoration: none;
 }
-html body #navigation-side ul li a:hover {
+html body.main #navigation-side ul li a:hover {
   cursor: pointer;
   color: #fafafa;
 }
-html body #navigation-side ul li a.active-page {
+html body.main #navigation-side ul li a.active-page {
   color: #fafafa;
 }
-html body #template-view {
+html body.main #template-view {
   margin-left: 425px;
-  height: 100%;
-  position: absolute;
-  overflow: auto;
+  max-width: 100%;
+  min-height: 100%;
 }
