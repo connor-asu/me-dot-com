@@ -39,6 +39,7 @@
                             element.parent().find('li').removeClass('active-page');
                             break;
                     }
+
                     element.on('click', function() {
 
                         //remove the active page class from all navigation items

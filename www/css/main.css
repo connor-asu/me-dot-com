@@ -4,9 +4,10 @@ html {
   position: absolute;
 }
 html body #navigation-side {
-  height: 100%;
+  overflow: hidden;
+  min-height: 100%;
   width: 425px;
-  position: fixed;
+  position: absolute;
   padding-top: 30px;
   border-right: 2px solid #062539;
   background: -webkit-linear-gradient(left top, #2f678c, #397eab);
@@ -54,4 +55,5 @@ html body #template-view {
   margin-left: 425px;
   height: 100%;
   position: absolute;
+  overflow: auto;
 }
