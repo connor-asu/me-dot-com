@@ -30,10 +30,9 @@ html body.main #navigation-side {
   -moz-box-shadow: 2px 3px 5px #000;
 }
 html body.main #navigation-side img {
-  border-radius: 50%;
   border: 2px solid #fff;
-  -webkit-box-shadow: 1px 4px #000;
-  -moz-box-shadow: 1px 4px #000;
+  -webkit-box-shadow: 2px 4px #000;
+  -moz-box-shadow: 2px 4px #000;
 }
 html body.main #navigation-side img:hover {
   cursor: pointer;
