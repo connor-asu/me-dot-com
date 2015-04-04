@@ -1,11 +1,39 @@
-<div ng-controller="HomeCtrl" id="navigation-side" class="text-center">
-    <img class="img-circle" navigation-side ui-sref="home" src="./img/profile-pic.png">
-    <h1>Connor Eggleston</h1>
-    <ul class="list-unstyled">
-        <li><a id="about" navigation-side ui-sref="about">About</a></li>
-        <li><a id="experience" navigation-side ui-sref="experience">Experience</a></li>
-        <li><a id="projects" navigation-side ui-sref="projects">Projects</a></li>
-        <li><a id="contact" navigation-side ui-sref="contact">Contact</a></li>
-    </ul>
+<div ng-controller="HomeCtrl" class="text-center">
+    <div class="container-fluid">
+        <div class="col-lg-2 remove-padding"></div>
+        <div class="col-lg-8 remove-padding">
+            <div class="navbar navbar-default navbar-inverse banner">
+                <a class="navbar-brand" ui-sref="about" default-page><h1>Connor Eggleston</h1></a>
+            </div>
+            <nav class="navbar navbar-default sub-banner">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse container" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav nav-links">
+                            <li main-navigation class="active default-page"><a ui-sref="about">About</a></li>
+                            <li main-navigation><a ui-sref="experience">Experience</a></li>
+                            <li main-navigation><a ui-sref="projects">Projects</a></li>
+                            <li main-navigation><a ui-sref="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="col-lg-2 remove-padding"></div>
+    </div>
 </div>
+
+
 

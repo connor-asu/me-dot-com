@@ -1,15 +1,4 @@
-//dimensions
-@navigation-side-width: 425px;
-
-//font sizes
-@navigation-side-list-font-size: 30px;
-@navigation-side-name-font-size: 44px;
-
-//colors
-@navigation-side-background-color: #397EAB;
-@navigation-side-font-color: darken(#0D527E, 15%);
-@navigation-side-list-item-active-color: darken(#fff, 2%);
-@main-background-color: #f6f6f6;
+@import "constants.less";
 
 html {
   min-height: 100%;
@@ -19,72 +8,50 @@ html {
   body {
 
     width: 100%;
-    background-color: @main-background-color;
-//    background: url('../img/sf-skyline.png') no-repeat center center fixed;
-//    -webkit-background-size: cover;
-//    -moz-background-size: cover;
-//    background-size: cover;
-//    -o-background-size: cover;
+    background-color: @page-background-color;
 
-    #navigation-side {
-      overflow: hidden;
-      min-height: 100%;
-      width: @navigation-side-width;
-      position: absolute; //TODO: fixed or absolute?
-      padding-top: 30px;
-      border-right: 2px solid @navigation-side-font-color;
-      background: -webkit-linear-gradient(left top, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(to bottom right, darken(@navigation-side-background-color, 8%), @navigation-side-background-color); /* Standard syntax */
-      -webkit-box-shadow: 2px 3px 5px #000;
-      -moz-box-shadow: 2px 3px 5px #000;
+    .remove-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
-      img {
-        border: 2px solid #fff;
-        -webkit-box-shadow: 2px 4px #000;
-        -moz-box-shadow: 2px 4px #000;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
+    .banner {
+      height: @main-banner-height;
+      margin-bottom: 0;
+      background-color: @banner-background-color;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #000;
+      border-radius: 0;
 
       h1 {
-        margin-top: 25px;
-        font-size: @navigation-side-name-font-size;
-        color: @navigation-side-font-color;
-      }
-
-      ul {
-        margin-top: 50px;
-
-        li {
-          font-size: @navigation-side-list-font-size;
-          padding: 15px;
-
-          a {
-            color: @navigation-side-font-color;
-            text-decoration: none;
-
-            &:hover {
-
-              cursor: pointer;
-              color: @navigation-side-list-item-active-color;
-            }
-
-            &.active-page {
-              color: @navigation-side-list-item-active-color;
-            }
-          }
-        }
+        font-size: @banner-name-font-size;
+        color: @banner-name-text-color;
+        margin-left: 15px;
       }
     }
 
-    #template-view {
-      margin-left: @navigation-side-width;
-      max-width: 100%;
-      min-height: 100%;
+    .sub-banner {
+      background-color: #ccc;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+      border-right: 1px solid #000;
+      margin-bottom: 0;
+
+      .nav-links li a {
+        color: #000;
+        font-weight: bold;
+        font-size: @navigation-link-font-size;
+      }
+    }
+
+    .site-content {
+      background-color: @main-content-background-color;
+      border: 1px solid #000;
+      border-top: none;
     }
   }
 }

@@ -13,10 +13,18 @@
 </head>
 <body ng-cloak>
 
-    <!--the default navigation sidebar to be included on every view-->
+    <!--the default navigation be included on every view-->
     <div ng-include="'app.html'"></div>
-    <!--swap out the templates here-->
-    <div id="template-view" ui-view></div>
+
+    <div class="container-fluid">
+        <div class="col-lg-2"></div>
+        <!--swap out the templates here-->
+        <div class="col-lg-8 site-content" id="template-view" ui-view></div>
+        <div class="col-lg-2"></div>
+    </div>
+
+    <div ng-include="'footer.html'"></div>
+
 
     <!--include all of the external frameworks-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.4.0/less.min.js"></script>
@@ -32,7 +40,8 @@
     <script src="js/controllers/experience-controller.js"></script>
     <script src="js/controllers/projects-controller.js"></script>
     <script src="js/controllers/contact-controller.js"></script>
-    <script src="js/directives/navigation-side-directive.js"></script>
+    <script src="js/directives/navigation-main-directive.js"></script>
+    <script src="js/directives/default-page-directive.js"></script>
     <script src="components/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
     <script src="js/configs/app.routes.js"></script>
     <script src="js/app.init.js"></script>

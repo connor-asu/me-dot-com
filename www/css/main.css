@@ -5,59 +5,43 @@ html {
 }
 html body {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #bec3c6;
 }
-html body #navigation-side {
-  overflow: hidden;
-  min-height: 100%;
-  width: 425px;
-  position: absolute;
-  padding-top: 30px;
-  border-right: 2px solid #062539;
-  background: -webkit-linear-gradient(left top, #2f678c, #397eab);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #2f678c, #397eab);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #2f678c, #397eab);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #2f678c, #397eab);
-  /* Standard syntax */
-  -webkit-box-shadow: 2px 3px 5px #000;
-  -moz-box-shadow: 2px 3px 5px #000;
+html body .remove-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
-html body #navigation-side img {
-  border: 2px solid #fff;
-  -webkit-box-shadow: 2px 4px #000;
-  -moz-box-shadow: 2px 4px #000;
+html body .banner {
+  height: 125px;
+  margin-bottom: 0;
+  background-color: #333333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
 }
-html body #navigation-side img:hover {
-  cursor: pointer;
+html body .banner h1 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-left: 15px;
 }
-html body #navigation-side h1 {
-  margin-top: 25px;
-  font-size: 44px;
-  color: #062539;
+html body .sub-banner {
+  background-color: #ccc;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  margin-bottom: 0;
 }
-html body #navigation-side ul {
-  margin-top: 50px;
+html body .sub-banner .nav-links li a {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
 }
-html body #navigation-side ul li {
-  font-size: 30px;
-  padding: 15px;
-}
-html body #navigation-side ul li a {
-  color: #062539;
-  text-decoration: none;
-}
-html body #navigation-side ul li a:hover {
-  cursor: pointer;
-  color: #fafafa;
-}
-html body #navigation-side ul li a.active-page {
-  color: #fafafa;
-}
-html body #template-view {
-  margin-left: 425px;
-  max-width: 100%;
-  min-height: 100%;
+html body .site-content {
+  background-color: #f8f8f8;
+  border: 1px solid #000;
+  border-top: none;
 }

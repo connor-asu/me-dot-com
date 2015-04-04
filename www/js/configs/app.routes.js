@@ -14,7 +14,7 @@
                 .state("home", {
                     url: "/",
                     controller: "HomeCtrl",
-                    templateUrl: "partials/home.html"
+                    templateUrl: "partials/about.html"
                 })
                 .state("about", {
                     url: "/about",

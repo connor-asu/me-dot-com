@@ -10,6 +10,10 @@
 
             $scope.currentRoute = $location.path();
 
+            $scope.goHome = function() {
+                $scope.currentRoute = "/about";
+            }
+
         });
 
 }(jQuery, angular));
