@@ -9,20 +9,22 @@
 @navigation-side-background-color: #397EAB;
 @navigation-side-font-color: darken(#0D527E, 15%);
 @navigation-side-list-item-active-color: darken(#fff, 2%);
+@main-background-color: #f6f6f6;
 
 html {
   min-height: 100%;
   min-width: 100%;
   position: absolute;
 
-  body.main {
+  body {
 
     width: 100%;
-    background: url('../img/sf-skyline.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-color: @main-background-color;
+//    background: url('../img/sf-skyline.png') no-repeat center center fixed;
+//    -webkit-background-size: cover;
+//    -moz-background-size: cover;
+//    background-size: cover;
+//    -o-background-size: cover;
 
     #navigation-side {
       overflow: hidden;
