@@ -10,10 +10,10 @@
 
             return {
                 link: function(scope, element, attrs) {
-                    var activePage = scope.currentRoute;
+                    var activePage = scope.getCurrentRoute();
+                    var defaultPage = $('.default-page');
                     switch(activePage) {
                         case "/":
-                            console.log("home");
                             break;
                         case "/about":
                             if (attrs.id === "about") {
@@ -22,21 +22,25 @@
                             break;
                         case "/experience":
                             if (attrs.id === "experience") {
+                                defaultPage.removeClass('active');
                                 element.addClass('active');
                             }
                             break;
                         case "/projects":
                             if (attrs.id === "projects") {
+                                defaultPage.removeClass('active');
                                 element.addClass('active');
                             }
                             break;
                         case "/contact":
                             if (attrs.id === "contact") {
+                                defaultPage.removeClass('active');
                                 element.addClass('active');
                             }
                             break;
                         default:
                             element.parent().find('li').removeClass('active');
+                            defaultPage.addClass('active');
                             break;
                     }
 

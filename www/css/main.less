@@ -7,6 +7,7 @@ html {
 
   body {
 
+    height: 100%;
     width: 100%;
     background-color: @page-background-color;
 
@@ -16,7 +17,7 @@ html {
     }
 
     .banner {
-      height: @main-banner-height;
+//      height: @main-banner-height;
       margin-bottom: 0;
       background-color: @banner-background-color;
       border-top: none;
@@ -25,15 +26,28 @@ html {
       border-bottom: 1px solid #000;
       border-radius: 0;
 
-      h1 {
-        font-size: @banner-name-font-size;
-        color: @banner-name-text-color;
-        margin-left: 15px;
+      .banner-contents {
+
+        padding-top: @main-banner-padding;
+        padding-bottom: @main-banner-padding;
+        margin-left: @main-banner-padding;
+
+        img {
+          border: 2px solid #fff;
+          float: left;
+        }
+
+        h1 {
+          font-size: @banner-name-font-size;
+          color: @banner-name-text-color;
+          float: left;
+          margin-left: 15px;
+        }
       }
     }
 
     .sub-banner {
-      background-color: #ccc;
+      background-color: @sub-banner-background-color;
       border-radius: 0;
       border: none;
       border-bottom: 1px solid #000;
@@ -52,6 +66,23 @@ html {
       background-color: @main-content-background-color;
       border: 1px solid #000;
       border-top: none;
+    }
+
+    footer {
+      margin-top: 10px;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      h1 {
+        display: none;
+      }
+
+      img {
+        margin-left: 41.5%;
+      }
     }
   }
 }

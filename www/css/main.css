@@ -4,6 +4,7 @@ html {
   position: absolute;
 }
 html body {
+  height: 100%;
   width: 100%;
   background-color: #bec3c6;
 }
@@ -12,7 +13,6 @@ html body .remove-padding {
   padding-right: 0;
 }
 html body .banner {
-  height: 125px;
   margin-bottom: 0;
   background-color: #333333;
   border-top: none;
@@ -21,13 +21,23 @@ html body .banner {
   border-bottom: 1px solid #000;
   border-radius: 0;
 }
-html body .banner h1 {
+html body .banner .banner-contents {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
+}
+html body .banner .banner-contents img {
+  border: 2px solid #fff;
+  float: left;
+}
+html body .banner .banner-contents h1 {
   font-size: 48px;
   color: #ffffff;
+  float: left;
   margin-left: 15px;
 }
 html body .sub-banner {
-  background-color: #ccc;
+  background-color: #cccccc;
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #000;
@@ -44,4 +54,15 @@ html body .site-content {
   background-color: #f8f8f8;
   border: 1px solid #000;
   border-top: none;
+}
+html body footer {
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  html .banner h1 {
+    display: none;
+  }
+  html .banner img {
+    margin-left: 41.5%;
+  }
 }

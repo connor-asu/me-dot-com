@@ -3,7 +3,8 @@
         <div class="col-lg-2 remove-padding"></div>
         <div class="col-lg-8 remove-padding">
             <div class="navbar navbar-default navbar-inverse banner">
-                <a class="navbar-brand" ui-sref="about" default-page><h1>Connor Eggleston</h1></a>
+                <!--<a class="navbar-brand" ui-sref="about" default-page><img class="img-circle" src="img/profile-pic-sm.png"><h1>Connor Eggleston</h1></a>-->
+                <div class="container-fluid banner-contents"><a ui-sref="about"><img default-page class="img-circle" src="img/profile-pic-sm.png"><h1 default-page>Connor Eggleston</h1></a></div>
             </div>
             <nav class="navbar navbar-default sub-banner">
                 <div class="container-fluid">
@@ -20,10 +21,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse container" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav nav-links">
-                            <li main-navigation class="active default-page"><a ui-sref="about">About</a></li>
-                            <li main-navigation><a ui-sref="experience">Experience</a></li>
-                            <li main-navigation><a ui-sref="projects">Projects</a></li>
-                            <li main-navigation><a ui-sref="contact">Contact</a></li>
+                            <li main-navigation class="active default-page" id="about"><a ui-sref="about">About</a></li>
+                            <li main-navigation id="experience"><a ui-sref="experience">Experience</a></li>
+                            <li main-navigation id="projects"><a ui-sref="projects">Projects</a></li>
+                            <li main-navigation id="contact"><a ui-sref="contact">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
