@@ -1,5 +1,62 @@
 <div class="container-fluid contact-page">
     <div class="dark-fill container-fluid">
         <h1>Contact</h1>
+        <div class="container-fluid">
+            <div class="col-md-6">
+                <p>
+                    I am currently taking on new projects. If you would like to contact me regarding any
+                    develpment work, feel free to call or send an email. You can also reach me using the
+                    message form. Thank you for your interest.
+                </p>
+                <div class="social-links">
+                    <a href="http://linkedin.com/in/connoreggleston" class="btn btn-social-icon btn-linkedin">
+                        <i class="fa fa-linkedin-square fa-4x" id="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/connor-asu" class="btn btn-social-icon btn-github">
+                        <i class="fa fa-github-square fa-4x" id="github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/connor.eggleston" class="btn btn-social-icon btn-facebook">
+                        <i class="fa fa-facebook-square fa-4x" id="facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/c_eggleston10/" class="btn btn-social-icon btn-instagram">
+                        <i class="fa fa-instagram fa-4x" id="instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/ceggleston10" class="btn btn-social-icon btn-twitter">
+                        <i class="fa fa-twitter-square fa-4x" id="twitter"></i>
+                    </a>
+                    <a href="https://soundcloud.com/connoreggleston" class="btn btn-social-icon btn-soundcloud">
+                        <i class="fa fa-soundcloud fa-4x" id="soundcloud"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 contact-icons">
+                <a href="tel:9167518867" class="no-hover-link"><i class="fa fa-phone fa-lg"></i>916.751.8867</a><br>
+                <a href="mailto:connoreggleston@outlook.com" class="hover-link"><i class="fa fa-envelope fa-lg"></i>connoreggleston@outlook.com</a>
+                <div class="container-fluid contact-form-holder">
+                    <div class="col-md-12" ng-controller="ContactCtrl">
+                        <h3>Send me a message:</h3>
+                        <form role="form" name="contact-form">
+                            <div class="form-group">
+                                <label for="sender-name">Name:</label>
+                                <input type="text" class="form-control" id="sender-name" placeholder="Enter your name" ng-model="message.sender">
+                            </div>
+                            <div class="form-group">
+                                <label for="sender-email">Email:</label>
+                                <input type="email" class="form-control" id="sender-email" placeholder="Enter your email" ng-model="message.senderEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="sender-subject">Subject:</label>
+                                <input type="text" class="form-control" id="sender-subject" placeholder="Enter message subject" ng-model="message.subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="sender-message">Message:</label>
+                                <textarea class="form-control" id="sender-message" rows="10" placeholder="Enter message" ng-model="message.content"></textarea>
+                            </div>
+                            <button ng-click="submitContactRequest()" class="send-button">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
