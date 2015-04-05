@@ -50,6 +50,26 @@ html body .sub-banner .nav-links li a {
   font-weight: bold;
   font-size: 20px;
 }
+html body .sub-banner .downloader {
+  list-style: none;
+}
+html body .sub-banner .downloader i {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 15px;
+  color: #000000;
+}
+html body .sub-banner .downloader a:hover {
+  text-decoration: none;
+}
+html body .sub-banner .downloader a:hover span,
+html body .sub-banner .downloader a:hover i {
+  color: darkgreen;
+}
+html body .sub-banner .downloader span {
+  color: #000000;
+  font-size: 20px;
+}
 html body .site-content {
   background-color: #f8f8f8;
   border: 1px solid #000;
