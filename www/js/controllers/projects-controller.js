@@ -8,7 +8,9 @@
     angular.module("MeDotCom.Controllers")
         .controller("ProjectCtrl", function($scope) {
 
-            $scope.message = "Project";
+            $('.carousel').carousel({
+                interval: 4000
+            });
 
         });
 

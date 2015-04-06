@@ -74,9 +74,14 @@ html body .site-content {
   background-color: #f8f8f8;
   border: 1px solid #000;
   border-top: none;
+  padding: 0;
 }
-html body footer {
-  margin-top: 10px;
+html body .footer {
+  padding: 20px 0;
+  background-color: #4d4d4d;
+  color: #fff;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 @media (max-width: 768px) {
   html .banner h1 {
