@@ -9,7 +9,7 @@
         .controller("ProjectCtrl", function($scope) {
 
             $('.carousel').carousel({
-                interval: 10000
+                interval: 6000
             });
 
         });

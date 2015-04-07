@@ -6,6 +6,13 @@
 
   .thumbnails {
 
+    padding-left: 0;
+    padding-right: 0;
+    background-color: darken(@main-content-background-color, 4%);
+
+    div {
+      margin-bottom: 50px;
+
       img {
         width: 100%;
         margin-top: 25px;
@@ -21,6 +28,7 @@
         padding-left: 15px;
         padding-right: 15px;
       }
+    }
 
     button {
       padding-left: 15px;
@@ -39,8 +47,50 @@
 
     .learn-more {
       margin-top: 15px;
-      margin-bottom: 50px;
     }
+  }
+
+  .project-container {
+    padding-left: 0;
+    padding-right: 0;
+
+    .project-section {
+      padding-bottom: 40px;
+    }
+
+    .project-content {
+      margin-top: 30px;
+
+      .carousel {
+        max-width: @projects-carousel-max-width;
+
+        a {
+          &:hover {
+            cursor: pointer;
+          }
+
+          .carousel-nav-icons {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  //set the colors and styling for the individual sections here
+  .triptivity {
+    background-color: @ocean-blue;
+    color: #fff;
+  }
+
+  .eggleston-designs {
+    background-color: darkgreen;
+    color: #fff;
+  }
+
+  .feel-free {
+    background-color: @soundcloud-color;
+    color: #fff;
   }
 
   @media (max-width: 1500px) and (min-width: 1200px) {
