@@ -5,14 +5,12 @@
   font-size: @site-content-font-size;
 
   .thumbnails {
-    div {
-      padding-left: 70px;
-      padding-right: 70px;
 
       img {
-        max-width: 100%;
+        width: 100%;
         margin-top: 25px;
-        border: 2px solid #000;
+        padding-left: 70px;
+        padding-right: 70px;
       }
 
       h3 {
@@ -23,7 +21,6 @@
         padding-left: 15px;
         padding-right: 15px;
       }
-    }
 
     button {
       padding-left: 15px;
@@ -43,6 +40,15 @@
     .learn-more {
       margin-top: 15px;
       margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 1500px) and (min-width: 1200px) {
+    .thumbnails {
+      div {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
 
