@@ -1,38 +1,24 @@
 <div class="projects-page" ng-controller="ProjectCtrl">
-    <div class="dark-fill container-fluid carousel-container">
-        <div id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item">
-                    <img src="../img/cover-pic-xl.png">
-                    <div class="carousel-caption">
-                        <h1>Project caption header</h1>
-                        <p>Project caption description...</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="../img/tomorrowland-cover-xl.png">
-                    <div class="carousel-caption">
-                        <h1>Project caption header</h1>
-                        <p>Project caption description...</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="../img/cover-pic-xl.png">
-                    <div class="carousel-caption">
-                        <h1>Project caption header</h1>
-                        <p>Project caption description...</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel nav -->
-            <a carousel-action class="carousel-control left" data-slide="prev" direction="prev"><i class="fa fa-chevron-circle-left fa-2x"></i></a>
-            <a carousel-action class="carousel-control right" data-slide="next" direction="next"><i class="fa fa-chevron-circle-right fa-2x"></i></a>
+    <div class="container-fluid thumbnails">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <img class="img-circle" src="../img/triptivity-logo.png">
+            <h3 class="text-center">Triptivity</h3>
+            <p>
+                Social network for travelers allowing people to create profiles for their trips.
+            </p>
+            <p class="text-center learn-more"><button>Learn More</button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <img class="img-circle" src="../img/eggleston-designs-blk.png">
+            <h3 class="text-center">Eggleston Designs</h3>
+            <p>Small business website for home staging. Yes, the owner is related to me.</p>
+            <p class="text-center learn-more"><button>Learn More</button></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <img class="img-circle" src="../img/feel-free.png">
+            <h3 class="text-center">Feel Free</h3>
+            <p>Startup utilizing technology to enhance social and collaborative experiences.</p>
+            <p class="text-center learn-more"><button>Learn More</button></p>
         </div>
     </div>
 </div>

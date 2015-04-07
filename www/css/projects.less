@@ -4,24 +4,46 @@
 
   font-size: @site-content-font-size;
 
-  .carousel-container {
-    padding: 0;
-  }
+  .thumbnails {
+    div {
+      padding-left: 70px;
+      padding-right: 70px;
 
-  .carousel {
-    a {
-      &:hover {
-        cursor: pointer;
+      img {
+        max-width: 100%;
+        margin-top: 25px;
+        border: 2px solid #000;
+      }
+
+      h3 {
+        font-weight: bold;
+      }
+
+      p {
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
-  }
 
-  .carousel-inner {
-    img {
-      width: 100%;
+    button {
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: inherit;
+      box-shadow: none;
+      border: 2px solid @default-link-hover-color;
+      border-radius: 5px;
+      color: @default-link-hover-color;
+
+      &:hover {
+        color: #fff;
+        background-color: @default-link-hover-color;
+      }
+    }
+
+    .learn-more {
+      margin-top: 15px;
+      margin-bottom: 50px;
     }
   }
-
-
 
 }

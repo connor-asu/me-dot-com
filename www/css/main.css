@@ -84,6 +84,10 @@ html body .footer {
   border-right: 1px solid #000;
 }
 @media (max-width: 768px) {
+  html .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   html .banner h1 {
     display: none;
   }
