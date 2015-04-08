@@ -19,11 +19,14 @@
 
                         //target the proper carousel
                         switch(target) {
-                            case 'android': //target the android carousel
+                            case 'triptivity-android': //target the android carousel
                                 carousel = $('#triptivity-android-carousel');
                                 break;
-                            case 'desktop': //target the desktop carousel
+                            case 'triptivity-desktop': //target the desktop carousel
                                 carousel = $('#triptivity-desktop-carousel');
+                                break;
+                            case 'eggleston-designs': //target the desktop carousel
+                                carousel = $('#eggleston-designs-carousel');
                                 break;
                             default:
                                 break;
