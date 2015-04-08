@@ -3,33 +3,24 @@
     <div class="container-fluid thumbnails">
         <div class="col-lg-4 col-md-4 col-sm-6">
             <img class="img-circle" src="../img/triptivity-logo.png">
-
             <h3 class="text-center">Triptivity</h3>
-
             <p>Social network for travelers allowing people to create profiles for their trips.</p>
-
             <p class="text-center learn-more">
                 <button>Learn More</button>
             </p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
             <img class="img-circle" src="../img/eggleston-designs.png">
-
             <h3 class="text-center">Eggleston Designs</h3>
-
             <p>Small business website for home staging. Yes, the owner is related to me.</p>
-
             <p class="text-center learn-more">
                 <button>Learn More</button>
             </p>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6">
             <img class="img-circle" src="../img/feel-free.png">
-
             <h3 class="text-center">Feel Free</h3>
-
             <p>Startup utilizing technology to enhance social and collaborative experiences.</p>
-
             <p class="text-center learn-more">
                 <button>Learn More</button>
             </p>
@@ -37,87 +28,85 @@
     </div>
     <!--The section where the Triptivity project will be highlighted-->
     <div class="container-fluid project-container triptivity">
-        <div class="col-md-12 project-section">
+        <div class="col-md-12 project-section" id="triptivity-project-section">
             <h1 class="text-center">Triptivity</h1>
             <div class="container-fluid row project-content">
                 <div class="col-md-6 col-md-push-6">
-                    <!--carousel of projects images-->
-                    <div id="myCarousel1" class="carousel slide">
+                    <!--carousel of mobile triptivity images-->
+                    <h2 class="carousel-header text-center">Android Prototype</h2>
+                    <div id="triptivity-android-carousel" class="carousel slide">
+                        <!-- carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <img src="../img/triptivity-android-screens/home-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-android-screens/profile-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-android-screens/create-trip-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-android-screens/explore-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-android-screens/headlines-screen.png">
+                            </div>
+                        </div>
+                        <!-- carousel nav -->
+                        <a carousel-action class="carousel-control left" data-slide="prev" direction="prev" target="android">
+                            <i class="fa fa-chevron-circle-left fa-2x carousel-nav-icons"></i>
+                        </a>
+                        <a carousel-action class="carousel-control right" data-slide="next" direction="next" target="android">
+                            <i class="fa fa-chevron-circle-right fa-2x carousel-nav-icons"></i>
+                        </a>
+                    </div>
+                    <!--carousel of desktop triptivity images-->
+                    <a href="https://tryptravl.com" target="_blank" class="tryptravl-link">
+                        <h2 class="carousel-header text-center">Desktop Version (Tryptravl)</h2>
+                    </a>
+                    <div id="triptivity-desktop-carousel" class="carousel slide">
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel1" data-slide-to="1"></li>
-                            <li data-target="#myCarousel1" data-slide-to="2"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="1"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="2"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="3"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="4"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="5"></li>
+                            <li data-target="#triptivity-desktop-carousel" data-slide-to="6"></li>
                         </ol>
                         <!-- carousel items -->
                         <div class="carousel-inner">
                             <div class="active item">
-                                <img src="http://lorempixel.com/600/400/city/">
+                                <img src="../img/triptivity-desktop-screens/splash-screen.png">
                             </div>
                             <div class="item">
-                                <img src="http://lorempixel.com/600/400/technics/">
+                                <img src="../img/triptivity-desktop-screens/profile-screen.png">
                             </div>
                             <div class="item">
-                                <img src="http://lorempixel.com/600/400/business/">
+                                <img src="../img/triptivity-desktop-screens/trip-home-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-desktop-screens/places-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-desktop-screens/blog-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-desktop-screens/album-screen.png">
+                            </div>
+                            <div class="item">
+                                <img src="../img/triptivity-desktop-screens/messages-screen.png">
                             </div>
                         </div>
                         <!-- carousel nav -->
-                        <a carousel-action class="carousel-control left" data-slide="prev" direction="prev">
+                        <a carousel-action class="carousel-control left" data-slide="prev" direction="prev" target="desktop">
                             <i class="fa fa-chevron-circle-left fa-2x carousel-nav-icons"></i>
                         </a>
-                        <a carousel-action class="carousel-control right" data-slide="next" direction="next">
+                        <a carousel-action class="carousel-control right" data-slide="next" direction="next" target="desktop">
                             <i class="fa fa-chevron-circle-right fa-2x carousel-nav-icons"></i>
                         </a>
-                    </div>
-                    <div class="tech-used">
-                        <h3 class="text-center">Technologies Used</h3>
-                        <div class="container-fluid">
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/people/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/sports/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/nightlife/">
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/abstract/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/food/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/nature/">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tech-used future">
-                        <h3 class="text-center">Future Development</h3>
-                        <div class="container-fluid">
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/people/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/sports/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/nightlife/">
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/abstract/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/food/">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://lorempixel.com/300/300/nature/">
-                            </div>
-                        </div>
-                    </div>
+                    </div> <!--end carousels-->
                 </div>
                 <div class="col-md-6 col-md-pull-6">
                     <p>

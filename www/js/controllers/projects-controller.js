@@ -8,8 +8,12 @@
     angular.module("MeDotCom.Controllers")
         .controller("ProjectCtrl", function($scope) {
 
-            $('.carousel').carousel({
+            $('#triptivity-android-carousel').carousel({
                 interval: 6000
+            });
+
+            $('#triptivity-desktop-carousel').carousel({
+                interval: 5500
             });
 
         });
