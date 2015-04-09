@@ -80,10 +80,12 @@
         }
 
         .carousel-header {
-          margin-top: 0;
-          padding: 10px 0;
-          background-color: darken(@triptivity-project-background-color, 15%);
-          border-radius: 8px;
+          &.triptivity-carousel-header {
+            margin-top: 0;
+            padding: 10px 0;
+            background-color: darken(@triptivity-project-background-color, 15%);
+            border-radius: 8px;
+          }
         }
 
 
@@ -95,7 +97,7 @@
           }
 
           &#eggleston-designs-carousel {
-            max-width: 1000px;
+            max-width: 700px;
             margin: 0 auto 15px auto;
           }
 
@@ -112,6 +114,14 @@
               margin-top: 30px;
             }
           }
+        }
+
+        .triptivity-inner {
+          background-color: darken(@triptivity-project-background-color, 15%);
+        }
+
+        .eggleston-designs-inner {
+          background-color: darken(#5C855E, 15%);
         }
 
         .image-container {
@@ -133,12 +143,14 @@
   }
 
   #eggleston-designs {
-//    background-color: darkgreen;
-//    color: #fff;
+    background-color: #5C855E;
+    color: #fff;
   }
 
   #feel-free {
-    background-color: @soundcloud-color;
+//    background-color: darken(#FF794B, 5%);
+//    background-color: #8a9297;
+    background-color: darken(#4dadbf, 10%);
     color: #fff;
   }
 

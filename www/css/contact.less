@@ -9,6 +9,20 @@
     margin-bottom: 30px;
   }
 
+  .container-fluid {
+    &.contact-left {
+      padding-left: 0;
+      padding-right: 0;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px auto;
+      }
+    }
+
+  }
+
   .social-links {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -125,6 +139,14 @@
   @media (max-width: 1300px) {
     .contact-icons {
       padding-left: 0;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .contact-left {
+      img {
+        display: none;
+      }
     }
   }
 }
