@@ -77,6 +77,10 @@ html body .site-content {
   border-top: none;
   padding: 0;
 }
+html body .inner-site-navigation-link {
+  color: darkgreen;
+  font-weight: bold;
+}
 html body .footer {
   padding: 20px 0;
   background-color: #4d4d4d;
