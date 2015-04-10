@@ -18,7 +18,7 @@
                 })
                 .state("about", {
                     url: "/about",
-                    controller: "AboutCtrl",
+                    controller: "HomeCtrl",
                     templateUrl: "partials/about.html"
                 })
                 .state("projects", {
