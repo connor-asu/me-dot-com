@@ -28,6 +28,9 @@
                             case 'eggleston-designs': //target the desktop carousel
                                 carousel = $('#eggleston-designs-carousel');
                                 break;
+                            case 'feel-free': //target the desktop carousel
+                                carousel = $('#feel-free-carousel');
+                                break;
                             default:
                                 break;
                         }
