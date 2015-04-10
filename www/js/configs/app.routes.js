@@ -21,11 +21,6 @@
                     controller: "AboutCtrl",
                     templateUrl: "partials/about.html"
                 })
-                .state("experience", {
-                    url: "/experience",
-                    controller: "ExperienceCtrl",
-                    templateUrl: "partials/experience.html"
-                })
                 .state("projects", {
                     url: "/projects",
                     controller: "ProjectCtrl",

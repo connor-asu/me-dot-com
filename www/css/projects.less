@@ -36,7 +36,7 @@
       background-color: inherit;
       box-shadow: none;
       border: 2px solid @default-link-hover-color;
-      border-radius: 5px;
+      border-radius: @standard-button-border-radius;
       color: @default-link-hover-color;
 
       &:hover {
@@ -74,7 +74,7 @@
         }
 
         .to-tryptravl {
-          color: darken(@triptivity-project-background-color, 20%);
+          color: @triptivity-project-background-color-darkest;
           font-weight: bold;
         }
 
@@ -83,7 +83,7 @@
           text-decoration: none;
           &:hover {
             .carousel-header {
-              background-color: darken(@triptivity-project-background-color, 20%);
+              background-color: @triptivity-project-background-color-darkest;
             }
           }
         }
@@ -92,11 +92,10 @@
           &.triptivity-carousel-header {
             margin-top: 0;
             padding: 10px 0;
-            background-color: darken(@triptivity-project-background-color, 15%);
+            background-color: @triptivity-project-background-color-darker;
             border-radius: 8px;
           }
         }
-
 
         .carousel {
           max-width: @projects-carousel-max-width;
@@ -126,15 +125,15 @@
         }
 
         .triptivity-inner {
-          background-color: darken(@triptivity-project-background-color, 15%);
+          background-color: @triptivity-project-background-color-darker;
         }
 
         .eggleston-designs-inner {
-          background-color: darken(#5C855E, 15%);
+          background-color: @eggleston-designs-project-background-color-darker;
         }
 
         .feel-free-inner {
-          background-color: darken(#4dadbf, 15%);
+          background-color: @feel-free-project-background-color-darker;
         }
 
         .image-container {
@@ -142,12 +141,11 @@
           #feel-free-logo {
             width: 100%;
             margin: 0 auto 40px;
-            border-radius: 10px;
+            border-radius: @standard-image-border-radius;
           }
         }
       }
     }
-
 
   }
 
@@ -158,12 +156,12 @@
   }
 
   #eggleston-designs {
-    background-color: #5C855E;
+    background-color: @eggleston-designs-project-background-color;
     color: #fff;
   }
 
   #feel-free {
-    background-color: darken(#4dadbf, 10%);
+    background-color: @feel-free-project-background-color;
     color: #fff;
   }
 
