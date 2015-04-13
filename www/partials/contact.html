@@ -44,19 +44,23 @@
                         <form role="form" name="contact-form">
                             <div class="form-group">
                                 <label for="sender-name">Name:</label>
-                                <input type="text" class="form-control" id="sender-name" placeholder="Enter your name" ng-model="message.sender">
+                                <input required type="text" class="form-control" id="sender-name" placeholder="Enter your name" ng-model="message.sender">
                             </div>
                             <div class="form-group">
                                 <label for="sender-email">Email:</label>
-                                <input type="email" class="form-control" id="sender-email" placeholder="Enter your email" ng-model="message.senderEmail">
+                                <input required type="email" class="form-control" id="sender-email" placeholder="Enter your email" ng-model="message.senderEmail">
                             </div>
                             <div class="form-group">
                                 <label for="sender-subject">Subject:</label>
-                                <input type="text" class="form-control" id="sender-subject" placeholder="Enter message subject" ng-model="message.subject">
+                                <input required type="text" class="form-control" id="sender-subject" placeholder="Enter message subject" ng-model="message.subject">
                             </div>
                             <div class="form-group">
                                 <label for="sender-message">Message:</label>
-                                <textarea class="form-control" id="sender-message" rows="10" placeholder="Enter message" ng-model="message.content"></textarea>
+                                <textarea required class="form-control" id="sender-message" rows="10" placeholder="Enter message" ng-model="message.content"></textarea>
+                            </div>
+                            <div class="container-fluid contact-response">
+                                <div class="alert alert-success" role="alert" ng-show="contactSuccess">Thank you for getting in touch. I'll get back to you as soon as I can.</div>
+                                <div class="alert alert-danger" role="alert" ng-show="contactError">{{errorMessage}}</div>
                             </div>
                             <button ng-click="submitContactRequest()" class="send-button">Send</button>
                         </form>
