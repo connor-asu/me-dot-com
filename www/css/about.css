@@ -1,0 +1,34 @@
+.about-page {
+  font-size: 19px;
+}
+.about-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-page img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.about-page .flt-rt {
+  float: right;
+}
+.about-page .img-container {
+  margin: 0;
+  padding: 0;
+}
+.about-page .about-page-content h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about-page .about-page-content p {
+  margin-bottom: 20px;
+}
+.about-page .about-page-content p#last {
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .about-page-content h3 {
+    text-align: center;
+  }
+}

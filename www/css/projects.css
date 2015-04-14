@@ -1,0 +1,136 @@
+.projects-page {
+  font-size: 19px;
+}
+.projects-page .thumbnails {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #eeeeee;
+}
+.projects-page .thumbnails div {
+  margin-bottom: 50px;
+}
+.projects-page .thumbnails div img {
+  width: 100%;
+  margin-top: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.projects-page .thumbnails div h3 {
+  font-weight: bold;
+}
+.projects-page .thumbnails div p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.projects-page .thumbnails button {
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: inherit;
+  box-shadow: none;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  color: darkgreen;
+}
+.projects-page .thumbnails button:hover {
+  color: #fff;
+  background-color: darkgreen;
+}
+.projects-page .thumbnails .learn-more {
+  margin-top: 15px;
+}
+.projects-page .project-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.projects-page .project-container .project-section {
+  padding-bottom: 40px;
+}
+.projects-page .project-container .project-section h1 {
+  font-size: 48px;
+}
+.projects-page .project-container .project-section .external-project-link {
+  color: #fff;
+}
+.projects-page .project-container .project-section .project-content {
+  margin-top: 40px;
+}
+.projects-page .project-container .project-section .project-content p {
+  text-align: justify;
+  margin-bottom: 17px;
+}
+.projects-page .project-container .project-section .project-content .to-tryptravl {
+  color: #20465e;
+  font-weight: bold;
+}
+.projects-page .project-container .project-section .project-content .tryptravl-link {
+  color: #fff;
+  text-decoration: none;
+}
+.projects-page .project-container .project-section .project-content .tryptravl-link:hover .carousel-header {
+  background-color: #20465e;
+}
+.projects-page .project-container .project-section .project-content .carousel-header.triptivity-carousel-header {
+  margin-top: 0;
+  padding: 10px 0;
+  background-color: #265472;
+  border-radius: 8px;
+}
+.projects-page .project-container .project-section .project-content .carousel {
+  max-width: 600px;
+}
+.projects-page .project-container .project-section .project-content .carousel#triptivity-android-carousel {
+  margin-bottom: 50px;
+}
+.projects-page .project-container .project-section .project-content .carousel#eggleston-designs-carousel {
+  max-width: 700px;
+  margin: 0 auto 15px auto;
+}
+.projects-page .project-container .project-section .project-content .carousel img {
+  margin: 0 auto;
+}
+.projects-page .project-container .project-section .project-content .carousel a:hover {
+  cursor: pointer;
+}
+.projects-page .project-container .project-section .project-content .carousel a .carousel-nav-icons {
+  margin-top: 30px;
+}
+.projects-page .project-container .project-section .project-content .triptivity-inner {
+  background-color: #265472;
+}
+.projects-page .project-container .project-section .project-content .eggleston-designs-inner {
+  background-color: #3d583e;
+}
+.projects-page .project-container .project-section .project-content .feel-free-inner {
+  background-color: #337f8d;
+}
+.projects-page .project-container .project-section .project-content .image-container #feel-free-logo {
+  width: 100%;
+  margin: 0 auto 40px;
+  border-radius: 10px;
+}
+.projects-page #triptivity {
+  background-color: #397eab;
+  color: #fff;
+}
+.projects-page #eggleston-designs {
+  background-color: #5c855e;
+  color: #fff;
+}
+.projects-page #feel-free {
+  background-color: #398fa0;
+  color: #fff;
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  .projects-page .thumbnails div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .projects-page .project-content p {
+    margin-top: 25px;
+  }
+  .projects-page .project-content p#feel-free-p {
+    margin-top: -20px;
+  }
+}
