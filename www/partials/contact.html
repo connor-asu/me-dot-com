@@ -62,7 +62,7 @@
                                 <div class="alert alert-success" role="alert" ng-show="contactSuccess">Thank you for getting in touch. I'll get back to you as soon as I can.</div>
                                 <div class="alert alert-danger" role="alert" ng-show="contactError">{{errorMessage}}</div>
                             </div>
-                            <button ng-click="submitContactRequest()" class="send-button">Send</button>
+                            <button ng-click="submitContactRequest()" class="send-button" ng-show="!contactSuccess">Send</button>
                         </form>
                     </div>
                 </div>
